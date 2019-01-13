@@ -1,0 +1,21 @@
+html, body{
+    scroll-behavior: smooth;
+    font-family: 'Raleway', sans-serif;
+}
+
+.fond_degrade{
+    background-image: url(../img/bg-pattern.png), linear-gradient(to right, rgb(243, 13, 13), rgb(62, 20, 248));
+    background-image: url(../img/bg-pattern.png), -o-linear-gradient(to right, rgb(243, 13, 13), rgb(62, 20, 248));
+    background-image: url(../img/bg-pattern.png), -moz-linear-gradient(to right, rgb(243, 13, 13), rgb(62, 20, 248));
+    background-image: url(../img/bg-pattern.png), -webkit-linear-gradient(to right, rgb(243, 13, 13), rgb(62, 20, 248));
+}
+
+.fond_iphone{
+    height: 700px;
+    background: url(../img/bg-cta.jpg) center;
+    background-size: cover;
+}
+
+.centrer{
+    padding: 250px 0 250px 0;
+}

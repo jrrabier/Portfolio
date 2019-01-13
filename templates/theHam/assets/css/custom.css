@@ -1,0 +1,81 @@
+html, body{
+    scroll-behavior: smooth;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.vert{
+    color: #19ceab;
+}
+/******************* FONDS **********************/
+.fond_vert{
+    background: #19ceab;
+}
+.fond_marine{
+    background: #1c2a33;
+}
+.fond_marine_testi{
+    background: #25333c;
+}
+.fond_accueil{
+    background: url(../img/rawpixel-592447-unsplash.jpg) center;
+    background-size: cover;
+}
+.fond_nt{
+    background: rgba(0, 0, 0, 0.6);
+}
+.fond_about{
+    height: 534px;
+    background: url(../img/about_us-1200x422.jpg);
+    background-size: cover;
+}
+.fond_work{
+    background-color: #19ceaa10;
+}
+.fond_laptop{
+    background: url(../img/john-schnobrich-520019-unsplash.jpg) center;
+    background-size: cover;
+}
+.fond_tablet{
+    height: 727px;
+    background: url(../img/resume-1200x574.jpg) center;
+    background-size: cover;
+}
+/********************* BOUTONS HOVER *********************/
+.boutons_vert:hover{
+    background: #16b393;
+}
+.boutons_marine:hover{
+    background: #31434e;
+}
+
+button{
+    font-size: 0.7rem !important;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #19ceab;
+}
+
+hr{
+    width: 10%;
+    height: 1px;
+}
+
+a{
+    color: black;
+}
+
+#work a:hover{
+    text-decoration: none;
+    color: #19ceab;
+}
+
+#services td:hover{
+    text-decoration: none;
+    background: #19ceab;
+    color: white;
+    cursor: pointer;
+}
+
+#search, #close{
+    cursor: pointer;
+}
