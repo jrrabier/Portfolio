@@ -65,7 +65,7 @@ function showSkills() {
 
     if (done == 0) { // FIRST TIME ANIMATION
         c = 750;
-        for (i = 0; i <= 11; i++) {
+        for (i = 0; i <= skillsIds.length; i++) {
             $(skillsIds[i]).delay(c).animate({
                 opacity: 1
             }, 1000);
@@ -88,7 +88,7 @@ function showLeasures() {
 
     if (done == 0) { // FIRST TIME ANIMATION
         c = 750;
-        for (i = 0; i <= 3; i++) {
+        for (i = 0; i <= leasuresIds.length; i++) {
             $(leasuresIds[i]).delay(c).animate({
                 opacity: 1,
                 left: '0px'
