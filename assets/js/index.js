@@ -1,12 +1,6 @@
 
 $(document).ready(function () {
 
-    // DISPLAY TOOLTIP
-
-    $(function () {
-        $(".tooltip-link").tooltip();
-    });
-
     // PRESENTATION ANIMATION
 
     function animOnLoad() {
@@ -43,19 +37,67 @@ skillsIds = [
     "#communication"
 ];
 
-leasuresIds = [
+portfolioIds = [
     "#tennis",
     "#jeuxvideo",
     "#cinema",
     "#running"
 ];
 
+positions = [
+    '-9000px',
+    '-6000px',
+    '-3000px',
+    '3000px',
+    '6000px',
+    '9000px'
+]
+
+function showHome() {
+
+    $('#competences').animate({
+        left: positions[3]
+    }, 500);
+    $('#portfolio').animate({
+        left: positions[4]
+    }, 500);
+    $('#contacts').animate({
+        left: positions[5]
+    }, 500);
+    $('#home').animate({
+        left: 0
+    }, 500)
+
+}
+
+function showContacts() {
+
+    $('#home').animate({
+        left: positions[0]
+    }, 500);
+    $('#competences').animate({
+        left: positions[1]
+    }, 500);
+    $('#portfolio').animate({
+        left: positions[2]
+    }, 500);
+    $('#contacts').animate({
+        left: 0
+    }, 500)
+
+}
 // SHOW SKILLS
 
 function showSkills() {
 
     $('#home').animate({
-        left: '-3000px'
+        left: positions[2]
+    }, 500);
+    $('#portfolio').animate({
+        left: positions[3]
+    }, 500);
+    $('#contacts').animate({
+        left: positions[4]
     }, 500);
     $('#competences').animate({
         left: 0
@@ -74,22 +116,29 @@ function showSkills() {
     }
 }
 
-// SHOW LEASURES
+// SHOW PORTFOLIO
 
-function showLeasures() {
+function showPortfolio() {
+
     $('#home').animate({
-        left: '-3000px'
+        left: positions[1]
     }, 500);
-    $('#loisirs').animate({
+    $('#competences').animate({
+        left: positions[2]
+    }, 500);
+    $('#contacts').animate({
+        left: positions[3]
+    }, 500);
+    $('#portfolio').animate({
         left: 0
     }, 500);
 
-    done = $('#tennis').css('opacity');
+    done = $('.portfolio').css('opacity');
 
     if (done == 0) { // FIRST TIME ANIMATION
         c = 750;
-        for (i = 0; i <= leasuresIds.length; i++) {
-            $(leasuresIds[i]).delay(c).animate({
+        for (i = 0; i <= portfolioIds.length; i++) {
+            $(portfolioIds[i]).delay(c).animate({
                 opacity: 1,
                 left: '0px'
             }, 500);

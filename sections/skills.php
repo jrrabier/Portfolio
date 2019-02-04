@@ -1,7 +1,7 @@
 <!-- COMPETENCES -->
 <section id="competences" class="container-fluid">
     <h1>Compétences</h1>
-    <hr class="w-25">
+    <hr>
     <div class="row mt-5">
         <div data-toggle="tooltip" data-original-title="Symfony 4" class="col-md-3 link tooltip-link">
             <img src="assets/img/icons/symfony_black.png" alt="symfony" id="symfony">

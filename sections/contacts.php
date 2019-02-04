@@ -1,7 +1,7 @@
  <!-- CONTACTS -->
- <section id="contacts" class="container-fluid text-center pt-4">
-        <h1>Contact</h1>
-        <hr class="w-25">
+ <section id="contacts" class="container-fluid">
+            <h1>Contacts</h1>
+            <hr>
         <div class="row">
             <div class="col-6 col-md-3">
                 <a href="https://www.facebook.com/jerome.rabier1" target="_blank" class="nav-link">
@@ -24,7 +24,6 @@
                 </a>
             </div>
         </div>
-
     </section>
     
     <!-- FOOTER -->
