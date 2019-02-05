@@ -3,10 +3,29 @@ html, body{
     font-family: 'Thasadith', sans-serif;
     justify-content: center;
     scroll-behavior: smooth;
-    background-image: url(../img/bg/qbkls.png);
 }
 hr {
     width: 25%;
+}
+
+/************************ NAVBAR ************************/
+
+nav ul{
+    position: fixed;
+    top: 10px;
+    z-index: 1000;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+
+nav ul li:hover{
+    cursor: pointer;
+    border-bottom: 1px solid grey;
 }
 
 /*********************** SECTIONS ***********************/
@@ -31,24 +50,6 @@ hr {
     opacity: 0;
 }
 
-nav ul{
-    position: fixed;
-    top: 10px;
-    z-index: 1000;
-}
-
-nav ul li{
-    display: inline-block;
-    list-style: none;
-    font-size: 1.5rem;
-    margin-right: 20px;
-}
-
-nav ul li:hover{
-    cursor: pointer;
-    border-bottom: 1px solid grey;
-}
-
 #home aside{
     position: relative;
     left: -200px;
@@ -61,9 +62,81 @@ nav ul li:hover{
     left:0;
 }
 
+/******************** HOME ANIMATION ********************/
+
+#homeAnim{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+.dots{
+    position: relative;
+    top: 99%;
+}
+
+#d1, #d2, #d3, #d4, #d5, #d6, #d7, #d8, #d9, #d10
+, #d11, #d12, #d13, #d14, #d15, #d16, #d17, #d18, #d19, #d20{
+    border-radius: 50%;
+    background-color: rgb(26, 25, 25);
+}
+
+#d1, #d6, #d11{width: 1px;height: 1px;}
+#d7, #d12, #d17{width: 2px;height: 2px;}
+#d3, #d13, #d18{width: 3px;height: 3px;}
+#d4, #d9, #d19{width: 4px;height: 4px;}
+#d5, #d10, #d15{width: 5px;height: 5px;}
+#d2, #d8, #d14{width: 6px;height: 6px;}
+#d20, #d16{width: 7px;height: 7px;}
+
+#d1{animation: homeAnim 10s 1s infinite;}
+#d2{animation: homeAnim 10s 2s infinite;}
+#d3{animation: homeAnim 10s 3s infinite;}
+#d4{animation: homeAnim 10s 4s infinite;}
+#d5{animation: homeAnim 10s 5s infinite;}
+#d6{animation: homeAnim 10s 6s infinite;}
+#d7{animation: homeAnim 10s 7s infinite;}
+#d8{animation: homeAnim 10s 8s infinite;}
+#d9{animation: homeAnim 10s 9s infinite;}
+#d10{animation: homeAnim 10s 10s infinite;}
+#d11{animation: homeAnim 10s 11s infinite;}
+#d12{animation: homeAnim 10s 12s infinite;}
+#d13{animation: homeAnim 10s 13s infinite;}
+#d14{animation: homeAnim 10s 14s infinite;}
+#d15{animation: homeAnim 10s 15s infinite;}
+#d16{animation: homeAnim 10s 16s infinite;}
+#d17{animation: homeAnim 10s 17s infinite;}
+#d18{animation: homeAnim 10s 18s infinite;}
+#d19{animation: homeAnim 10s 19s infinite;}
+#d20{animation: homeAnim 10s 20s infinite;}
+
+@-o-keyframes homeAnim {
+    from {top: 99%}
+    50% {top: 0%}
+    to {top: 99%}
+}
+@-moz-keyframes homeAnim {
+    from {top: 99%}
+    50% {top: 0%}
+    to {top: 99%}
+}
+@-webkit-keyframes homeAnim {
+    from {top: 99%}
+    50% {top: 0%}
+    to {top: 99%}
+}
+@keyframes homeAnim {
+    from {top: 99%}
+    50% {top: 0%}
+    to {top: 99%}
+}
+
 /******** SKILLS ********/
 /***************** SET SKILLS ANIMATION *****************/
 #competences{
+    background-image: url(../img/bg/qbkls.png);
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -140,6 +213,7 @@ nav ul li:hover{
 /******** CONTACTS ********/
 
 #contacts {
+    background-image: url(../img/bg/qbkls.png);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -159,7 +233,10 @@ nav ul li:hover{
 
 #contacts i{
     font-size: 7rem;
-    transition: all .5s;
+}
+
+#contacts i:hover{
+    opacity: 0.5;
 }
 
 #contacts i[class="fab fa-facebook-square"]{
@@ -173,8 +250,4 @@ nav ul li:hover{
 }
 #contacts i[class="fab fa-linkedin"]{
     color: #0077b5;
-}
-
-#contacts i:hover{
-    font-size: 10rem;
 }

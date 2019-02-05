@@ -38,9 +38,9 @@ skillsIds = [
 ];
 
 portfolioIds = [
-    "#tennis",
-    "#jeuxvideo",
-    "#cinema",
+    "#ostApp",
+    "#social",
+    "#theHam",
     "#running"
 ];
 

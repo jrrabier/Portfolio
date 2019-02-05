@@ -10,6 +10,10 @@ html, body{
     background-image: url(../img/bg-pattern.png), -webkit-linear-gradient(to right, rgb(243, 13, 13), rgb(62, 20, 248));
 }
 
+img[alt="IPhone6"]{
+    height: 900px;
+}
+
 .fond_iphone{
     height: 700px;
     background: url(../img/bg-cta.jpg) center;
