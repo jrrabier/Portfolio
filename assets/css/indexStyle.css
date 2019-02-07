@@ -1,5 +1,4 @@
 html, body{
-    width: 100%;
     font-family: 'Thasadith', sans-serif;
     justify-content: center;
     scroll-behavior: smooth;
@@ -10,9 +9,8 @@ hr {
 
 /************************ NAVBAR ************************/
 
-nav ul{
+nav{
     position: fixed;
-    top: 10px;
     z-index: 1000;
 }
 
@@ -30,6 +28,7 @@ nav ul li:hover{
 
 /*********************** SECTIONS ***********************/
 /******** HOME ********/
+
 #home{
     display: flex;
     align-items: center;
@@ -48,6 +47,8 @@ nav ul li:hover{
     position: relative;
     top: -100px;
     opacity: 0;
+    max-width: 100%;
+    height: auto;
 }
 
 #home aside{
@@ -135,6 +136,7 @@ nav ul li:hover{
 
 /******** SKILLS ********/
 /***************** SET SKILLS ANIMATION *****************/
+
 #competences{
     background-image: url(../img/bg/qbkls.png);
     display: flex;

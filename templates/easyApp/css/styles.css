@@ -1,0 +1,158 @@
+ 
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.fond_bleu{
+    background-color: #3dc7c2;
+}
+
+.fond_gris{
+    background-color: #27292b;
+}
+
+.fond_noir{
+    background-color: #000;
+}
+
+.bleu{
+    color: #3dc7c2;
+}
+
+.burger{
+    display: none;
+}
+
+.logo{
+    font-size: 2em;
+    padding: 20px;
+}
+
+.logo:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav{
+    width: 100%;
+    padding: 20px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+nav a{
+    color: #fff;
+}
+
+nav ul{
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li{
+    line-height: 20px;
+}
+
+nav ul li a{
+    display: block;
+    height: 100%;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: border-bottom 1s;
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+    color: #3dc7c2;
+    border-bottom: 1px solid #3dc7c2;
+}
+
+.active {
+    text-decoration: none;
+    color: #3dc7c2;
+    border-bottom: 1px solid #3dc7c2;
+}
+
+i{
+    color: rgba(0, 0, 0, 0.52);
+}
+
+footer i:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #3dc7c2;
+    text-decoration: none;
+}
+
+form button{
+    background-color: #3dc7c2;
+    padding: 10px 30px;
+    border-bottom: 3px solid #36918e;
+}
+
+form button:hover{
+    background-color: #36918e;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 576px){
+
+    .burger{
+        display: initial;
+    }
+
+    .burger i{
+        color: #fff;
+    }
+
+    .burger i:hover{
+        color: #3dc7c2;
+        cursor: pointer;
+    }
+
+    .menu{
+        position: absolute;
+        top: 88px;
+        left: -100%;
+        z-index: 1000;
+        width: 100%;
+        padding: 0;
+        background-color: #272727;
+        flex-direction: column;
+        transition: 1s;
+    }
+
+    nav ul li{
+        text-align:center;
+    }
+
+    nav ul li a{
+        display: inline-block;
+        padding: 20px;
+    }
+
+    nav ul li a:hover{
+        background-color: #000;
+    }
+
+    div[class=my-auto]{
+        text-align: center;
+    }
+
+    div[class=my-auto] div[class=row]{
+        justify-content: center;
+    }
+}
